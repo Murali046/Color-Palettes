@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    height: 100vh;
+}
+.logo{
+    height: 10vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.logo > h1{
+    /* border: 1px solid red; */
+    margin: 0px 40px;
+    font-size: 40px;
+    border-bottom: 4px solid  ;
+    display: flex;
+    align-items: center;
+}
+.colorsTab{
+    /* background-color: red; */
+    height: 90vh;
+    display: flex;
+}
+#imh{
+    height: 40px;
+    width: 40px;
+}
+.optionsTab{
+    /* height: 70px; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    /* border: 1px solid red; */
+    /* background-color:aqua; */
+
+}
+.opt {
+    border: 1px solid rgba(128, 128, 128, 0.441);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    margin : 10px;
+    border-radius: 16px;
+}
+.opt-selected{
+    background-color: black;
+    color: white;
+}
+.paletteTab{
+    width: 80%;
+    height: 100%;
+    /* background-color: green; */
+}
+.paletteTab{
+    display: flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+.colorPalette{
+    /* border : 1px solid rgba(0, 0, 0, 0.128); */
+    height: 40%;
+    width: 25%;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 15px ;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.colorPalette:hover{
+    filter: drop-shadow(
+      1px 2px 8px  hsl(0deg 0% 0% / 0.25)
+    )
+}
+.colorPalette > div{
+    /* background-color: aquamarine; */
+    /* position: absolute; */
+    width: 100%;
+}
+.colorPalette > p{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    /* visibility: hidden; */
+    display: none;
+}
+.colorPalette:hover > p{
+    /* visibility: visible; */
+    display: unset;
+}
+.color1{
+    height: 40%;
+}
+.color2{
+    height: 20% ;
+}
+.color3{
+    height: 20% ;
+}
+.color4{
+    height: 20% ;
+}
+.cp{
+    position: relative;
+}
+.hexText{
+    display: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: 800;
+    position: absolute;
+}
+.dsFlx{
+    display: unset;
+}
